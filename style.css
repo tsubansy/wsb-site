@@ -1305,39 +1305,33 @@ nav a:hover { color: var(--gold); }
 
 .contact-actions {
   display: flex;
-  gap: 16px;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
 }
 
 .contact-btn-line {
   background: #06C755;
   color: var(--white);
-  padding: 16px 44px;
+  padding: 18px 56px;
   font-family: var(--font-en);
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   text-decoration: none;
   transition: opacity 0.2s;
 }
 
 .contact-btn-line:hover { opacity: 0.85; }
 
-.contact-line-wrap {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
 .contact-qr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 6px;
+  gap: 12px;
 }
 
 .contact-qr img {
@@ -1350,24 +1344,29 @@ nav a:hover { color: var(--gold); }
 
 .contact-qr span {
   font-family: var(--font-en);
-  font-size: 0.58rem;
-  color: rgba(255,255,255,0.25);
-  letter-spacing: 0.08em;
-  white-space: nowrap;
+  font-size: 0.6rem;
+  color: rgba(255,255,255,0.2);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
 }
 
-.contact-btn-mail {
-  border: 1px solid rgba(255,255,255,0.2);
-  color: rgba(255,255,255,0.6);
-  padding: 16px 44px;
+/* メールアドレス — 素のテキスト、大きく */
+.contact-mail-text {
   font-family: var(--font-en);
-  font-size: 0.8rem;
+  font-size: clamp(0.9rem, 1.8vw, 1.2rem);
+  font-weight: 300;
   letter-spacing: 0.08em;
+  color: rgba(255,255,255,0.35);
   text-decoration: none;
-  transition: border-color 0.3s, color 0.3s;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 4px;
+  transition: color 0.3s, border-color 0.3s;
 }
 
-.contact-btn-mail:hover { border-color: var(--gold); color: var(--gold); }
+.contact-mail-text:hover {
+  color: var(--gold);
+  border-color: rgba(184,150,90,0.4);
+}
 
 /* ============================================================
    FOOTER
