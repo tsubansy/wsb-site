@@ -1341,11 +1341,11 @@ nav a:hover { color: var(--gold); }
 }
 
 .contact-qr img {
-  width: 72px;
-  height: 72px;
-  border-radius: 6px;
+  width: 288px;
+  height: 288px;
+  border-radius: 10px;
   background: var(--white);
-  padding: 4px;
+  padding: 8px;
 }
 
 .contact-qr span {
