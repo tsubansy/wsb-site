@@ -1116,6 +1116,10 @@ nav a:hover { color: var(--gold); }
   padding: 160px 80px;
 }
 
+.voice-header {
+  margin-bottom: 64px;
+}
+
 .voice-inner {
   display: grid;
   grid-template-columns: 1fr 340px;
