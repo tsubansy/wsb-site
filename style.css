@@ -45,7 +45,7 @@ body::before {
 
 .section-eyebrow {
   font-family: var(--font-en);
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 600;
   letter-spacing: 0.25em;
   text-transform: uppercase;
@@ -278,7 +278,7 @@ nav a:hover { color: var(--gold); }
 
 .hero-no {
   font-family: var(--font-en);
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: var(--gold);
   letter-spacing: 0.2em;
   margin-bottom: 32px;
@@ -466,7 +466,7 @@ nav a:hover { color: var(--gold); }
 
 .statement-label {
   font-family: var(--font-en);
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   letter-spacing: 0.2em;
   color: var(--gold);
   margin-bottom: 48px;
@@ -858,7 +858,7 @@ nav a:hover { color: var(--gold); }
 
 .plan-row-price--free {
   color: var(--gray);
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 .plan-row-btn--free {
@@ -898,7 +898,7 @@ nav a:hover { color: var(--gold); }
 .plan-row-en {
   font-family: var(--font-en);
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   letter-spacing: 0.05em;
   color: var(--white);
 }
@@ -910,7 +910,7 @@ nav a:hover { color: var(--gold); }
 
 .plan-row-price {
   font-family: var(--font-en);
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 700;
   color: var(--white);
   letter-spacing: -0.02em;
@@ -1238,7 +1238,7 @@ nav a:hover { color: var(--gold); }
 
 .faq-icon {
   margin-left: auto;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 300;
   color: var(--gray);
   transition: transform 0.3s;
