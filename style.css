@@ -45,7 +45,7 @@ body::before {
 
 .section-eyebrow {
   font-family: var(--font-en);
-  font-size: 1.4rem;
+  font-size: 2.5rem;
   font-weight: 600;
   letter-spacing: 0.25em;
   text-transform: uppercase;
@@ -278,7 +278,7 @@ nav a:hover { color: var(--gold); }
 
 .hero-no {
   font-family: var(--font-en);
-  font-size: 1.4rem;
+  font-size: 2.5rem;
   color: var(--gold);
   letter-spacing: 0.2em;
   margin-bottom: 32px;
@@ -898,7 +898,7 @@ nav a:hover { color: var(--gold); }
 .plan-row-en {
   font-family: var(--font-en);
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 2.5rem;
   letter-spacing: 0.05em;
   color: var(--white);
 }
@@ -1238,7 +1238,7 @@ nav a:hover { color: var(--gold); }
 
 .faq-icon {
   margin-left: auto;
-  font-size: 1.4rem;
+  font-size: 2.5rem;
   font-weight: 300;
   color: var(--gray);
   transition: transform 0.3s;
