@@ -315,10 +315,10 @@ nav a:hover { color: var(--gold); }
 }
 
 .hero-sub {
-  font-size: 0.85rem;
+  font-size: 1.6rem;
   line-height: 1.9;
   color: rgba(255,255,255,0.45);
-  max-width: 280px;
+  max-width: 400px;
 }
 
 .hero-cta {
