@@ -45,7 +45,7 @@ body::before {
 
 .section-eyebrow {
   font-family: var(--font-en);
-  font-size: 0.7rem;
+  font-size: 1.4rem;
   font-weight: 600;
   letter-spacing: 0.25em;
   text-transform: uppercase;
@@ -278,7 +278,7 @@ nav a:hover { color: var(--gold); }
 
 .hero-no {
   font-family: var(--font-en);
-  font-size: 0.7rem;
+  font-size: 1.4rem;
   color: var(--gold);
   letter-spacing: 0.2em;
   margin-bottom: 32px;
