@@ -133,7 +133,7 @@ body::before {
 
 .logo-sub {
   font-family: var(--font-en);
-  font-size: 0.65rem;
+  font-size: 1rem;
   font-weight: 300;
   color: rgba(255,255,255,0.6);
   letter-spacing: 0.05em;
