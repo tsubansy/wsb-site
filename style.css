@@ -1449,6 +1449,193 @@ footer {
 }
 
 /* ============================================================
+   CHAPTERS NAV (index top page)
+   ============================================================ */
+
+#chapters {
+  background: var(--black);
+  padding: 160px 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.chapters-eyebrow {
+  margin-bottom: 64px;
+}
+
+.chapters-list {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.chapter-item {
+  display: grid;
+  grid-template-columns: 80px 240px 1fr 48px;
+  align-items: center;
+  gap: 40px;
+  padding: 48px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  text-decoration: none;
+  transition: padding-left 0.4s cubic-bezier(0.16,1,0.3,1);
+}
+
+.chapter-item:hover { padding-left: 16px; }
+
+.chapter-num {
+  font-family: var(--font-en);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  color: var(--gold);
+  opacity: 0.6;
+}
+
+.chapter-title {
+  font-family: var(--font-en);
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: var(--white);
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.chapter-item:hover .chapter-title { color: var(--gold); }
+
+.chapter-desc {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.28);
+  line-height: 1.7;
+}
+
+.chapter-arrow {
+  font-family: var(--font-en);
+  font-size: 1.3rem;
+  color: rgba(255,255,255,0.12);
+  text-align: right;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.chapter-item:hover .chapter-arrow {
+  transform: translateX(8px);
+  color: var(--gold);
+}
+
+/* ============================================================
+   PAGE HERO (subpages)
+   ============================================================ */
+
+.page-hero {
+  background: var(--black);
+  padding: 180px 80px 100px;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  animation: pageEnter 0.8s cubic-bezier(0.16,1,0.3,1) both;
+}
+
+.page-hero::after {
+  content: attr(data-title);
+  position: absolute;
+  bottom: -40px;
+  right: -20px;
+  font-family: var(--font-en);
+  font-weight: 900;
+  font-size: clamp(8rem, 18vw, 18rem);
+  color: rgba(255,255,255,0.025);
+  letter-spacing: -0.04em;
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+  text-transform: uppercase;
+}
+
+.page-hero-num {
+  font-family: var(--font-en);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  color: var(--gold);
+  margin-bottom: 32px;
+  display: block;
+}
+
+.page-hero h1 {
+  font-family: var(--font-en);
+  font-size: clamp(3.5rem, 9vw, 8rem);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  color: var(--white);
+  line-height: 1;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+}
+
+.page-hero-desc {
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.32);
+  max-width: 500px;
+  line-height: 1.9;
+}
+
+@keyframes pageEnter {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ============================================================
+   PAGE NEXT NAVIGATION (subpage bottom)
+   ============================================================ */
+
+.page-next {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--black);
+  padding: 72px 80px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.page-next:hover { background: rgba(255,255,255,0.02); }
+
+.page-next-label {
+  display: block;
+  font-family: var(--font-en);
+  font-size: 0.62rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gold);
+  opacity: 0.6;
+  margin-bottom: 10px;
+}
+
+.page-next-title {
+  font-family: var(--font-en);
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: var(--white);
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.page-next:hover .page-next-title { color: var(--gold); }
+
+.page-next-arrow {
+  font-size: 2.2rem;
+  color: rgba(255,255,255,0.15);
+  transition: transform 0.4s cubic-bezier(0.16,1,0.3,1), color 0.3s;
+}
+
+.page-next:hover .page-next-arrow {
+  transform: translateX(14px);
+  color: var(--gold);
+}
+
+/* ============================================================
    RESPONSIVE
    ============================================================ */
 
@@ -1485,6 +1672,13 @@ footer {
 
   nav { display: none; }
   .menu-btn { display: flex; }
+
+  /* subpage responsive */
+  .page-hero { padding: 140px 32px 72px; }
+  .chapter-item { grid-template-columns: 48px 1fr 32px; gap: 16px; padding: 32px 0; }
+  .chapter-desc { display: none; }
+  .page-next { padding: 48px 32px; }
+  #chapters { padding: 80px 32px; }
 
   footer { padding: 48px 32px; }
   .footer-top { flex-direction: column; gap: 32px; }

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plans — WSB by Studio NoKa</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@100;300;400;600;700;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== LOADER ========== -->
+  <div id="loader">
+    <div class="loader-text">WSB</div>
+  </div>
+
+  <!-- ========== HEADER ========== -->
+  <header id="header">
+    <div class="header-left">
+      <a href="index.html" class="logo">
+        <span class="logo-wsb">WSB</span>
+        <span class="logo-rule"></span>
+        <span class="logo-sub">by Studio NoKa</span>
+      </a>
+    </div>
+    <div class="header-right">
+      <nav>
+        <a href="about.html">About</a>
+        <a href="works.html">Works</a>
+        <a href="plans.html">Plans</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== MOBILE MENU ========== -->
+  <div class="mobile-menu" id="mobileMenu">
+    <nav class="mobile-nav">
+      <a href="about.html" class="mobile-link">About</a>
+      <a href="works.html" class="mobile-link">Works</a>
+      <a href="plans.html" class="mobile-link">Plans</a>
+      <a href="contact.html" class="mobile-link">Contact</a>
+    </nav>
+  </div>
+
+  <!-- ========== PAGE HERO ========== -->
+  <section class="page-hero" data-title="Plans">
+    <span class="page-hero-num">— 03 / 04</span>
+    <h1>Plans</h1>
+    <p class="page-hero-desc">料金プランと、<br>よくある質問。</p>
+  </section>
+
+  <!-- ========== PLANS ========== -->
+  <section id="plans">
+    <div class="plans-label-wrap reveal">
+      <p class="section-eyebrow">— Pricing</p>
+      <h2>シンプルな<em>料金</em>。</h2>
+    </div>
+
+    <div class="plans-list">
+
+      <!-- ¥0 Self -->
+      <div class="plan-row plan-row--free reveal">
+        <div class="plan-row-name">
+          <span class="plan-row-en">Self</span>
+          <span class="plan-row-jp">自分でやってみたい人へ</span>
+        </div>
+        <div class="plan-row-price plan-row-price--free">
+          ¥0
+        </div>
+        <div class="plan-row-desc">
+          <p>お金をかけずに試してみたい、という気持ちは正直だと思います。Readdy.aiというサービスが、無料で使えて本当によくできています。</p>
+          <ul>
+            <li>写真素材は自分で用意</li>
+            <li>公開後の操作も自分で</li>
+            <li>サポートなし</li>
+          </ul>
+        </div>
+        <a href="https://readdy.ai" target="_blank" rel="noopener" class="plan-row-btn plan-row-btn--free">Readdy.ai を見る →</a>
+      </div>
+
+      <!-- LP -->
+      <div class="plan-row reveal">
+        <div class="plan-row-name">
+          <span class="plan-row-en">LP</span>
+          <span class="plan-row-jp">ランディングページ</span>
+        </div>
+        <div class="plan-row-price">
+          ¥49,800<small>〜</small>
+        </div>
+        <div class="plan-row-desc">
+          <p>1ページで伝えきる、シンプルなサイト。まず公開したい方に。</p>
+          <ul>
+            <li>1ページ構成</li>
+            <li>スマホ対応</li>
+            <li>ドメイン・サーバー設定込み</li>
+            <li>公開後1ヶ月サポート</li>
+          </ul>
+        </div>
+        <a href="contact.html" class="plan-row-btn">相談する</a>
+      </div>
+
+      <!-- Standard (Featured) -->
+      <div class="plan-row plan-row--featured reveal">
+        <span class="plan-row-badge">Most Popular</span>
+        <div class="plan-row-name">
+          <span class="plan-row-en">Standard</span>
+          <span class="plan-row-jp">複数ページ構成</span>
+        </div>
+        <div class="plan-row-price">
+          ¥89,800<small>〜</small>
+        </div>
+        <div class="plan-row-desc">
+          <p>トップ・サービス・アクセス・お問い合わせ。しっかり伝わる、4〜5ページのサイト。</p>
+          <ul>
+            <li>4〜5ページ構成</li>
+            <li>スマホ対応</li>
+            <li>撮影オプション追加可</li>
+            <li>公開後3ヶ月サポート</li>
+          </ul>
+        </div>
+        <a href="contact.html" class="plan-row-btn plan-row-btn--featured">相談する</a>
+      </div>
+
+      <!-- Photo + Standard -->
+      <div class="plan-row reveal">
+        <div class="plan-row-name">
+          <span class="plan-row-en">Photo+</span>
+          <span class="plan-row-jp">撮影込みプラン</span>
+        </div>
+        <div class="plan-row-price">
+          ¥138,000<small>〜</small>
+        </div>
+        <div class="plan-row-desc">
+          <p>サイト制作 + Studio NoKaによる本格撮影。写真からすべて、まるごとお任せ。</p>
+          <ul>
+            <li>Standardプランの全内容</li>
+            <li>半日撮影（2〜3h）</li>
+            <li>写真データ納品（30枚〜）</li>
+            <li>公開後3ヶ月サポート</li>
+          </ul>
+        </div>
+        <a href="contact.html" class="plan-row-btn">相談する</a>
+      </div>
+
+    </div>
+    <p class="plans-note">※ 価格はすべて税込。規模・内容によって変わります。まずはご相談ください。</p>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section id="faq" class="reveal">
+    <div class="faq-inner">
+      <div class="faq-left">
+        <p class="section-eyebrow">— FAQ</p>
+        <h2>よくある<br><em>質問</em>。</h2>
+      </div>
+      <div class="faq-right">
+
+        <div class="faq-item">
+          <div class="faq-q">
+            <span class="faq-q-num">Q.01</span>
+            <span>制作期間はどのくらいですか？</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-a">ご相談から公開まで、最短2〜3週間が目安です。撮影がある場合は日程調整が必要なため、3〜4週間ほど見ていただいています。</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">
+            <span class="faq-q-num">Q.02</span>
+            <span>スマホからでも見られますか？</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-a">全プランでスマートフォン対応（レスポンシブ対応）しています。スマホで検索して見るお客さんのことを、最初から意識して設計します。</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">
+            <span class="faq-q-num">Q.03</span>
+            <span>自分で内容を更新できますか？</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-a">基本的には、更新のご要望をLINEでお知らせいただければ対応します。簡単な更新であれば追加費用なしでお受けしています（サポート期間内）。</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">
+            <span class="faq-q-num">Q.04</span>
+            <span>ドメイン（URL）は自分で選べますか？</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-a">はい。お好きなドメイン名を取得できます（空きがある場合）。ドメイン取得費・初期設定はすべてプラン内に含まれています。</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">
+            <span class="faq-q-num">Q.05</span>
+            <span>どんな業種でも対応できますか？</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-a">小さなお店・個人事業主・フリーランスの方を中心に対応しています。カフェ、サロン、教室、雑貨店など、業種は問いません。まずご相談ください。</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PAGE NEXT ========== -->
+  <a href="contact.html" class="page-next">
+    <div>
+      <span class="page-next-label">Next Chapter</span>
+      <span class="page-next-title">Contact</span>
+    </div>
+    <span class="page-next-arrow">→</span>
+  </a>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-logo-wrap">
+        <div class="logo">
+          <span class="logo-wsb">WSB</span>
+          <span class="logo-rule"></span>
+          <span class="logo-sub">by Studio NoKa</span>
+        </div>
+        <p class="footer-tagline">Web Site Build<br>AIと、プロと、写真で。</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="about.html">About</a>
+        <a href="works.html">Works</a>
+        <a href="plans.html">Plans</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Studio NoKa. All rights reserved.</p>
+      <p class="footer-credit">WSB — <em>W</em>eb <em>S</em>ite <em>B</em>uild</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
